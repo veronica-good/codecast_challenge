@@ -18,7 +18,7 @@ class QuestionsController < ApplicationController
 
     def destroy
         question=Question.find params[:id]
-        if @question.destroy
+        if question.destroy
             head :ok
         else
             head :bad_request

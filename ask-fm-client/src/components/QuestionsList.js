@@ -8,7 +8,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ContactSupportOutlinedIcon from '@material-ui/icons/ContactSupportOutlined';
 import AnswersList from './AnswersList'
 import NewAnswerForm from './NewAnswerForm';
-import {Divider} from '@material-ui/core'
+import { Divider, Button } from '@material-ui/core'
+import { Question } from '../requests'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -25,6 +26,11 @@ const useStyles = makeStyles((theme) => ({
 export default function QuestionsList(props) {
     let {questions} = props
     const classes = useStyles();
+
+    function deleteQuestion(id){
+        Question.destroy(id)
+        
+    }
 
     return (
         <List
@@ -46,6 +52,9 @@ export default function QuestionsList(props) {
                                 <ContactSupportOutlinedIcon />
                             </ListItemIcon>
                             <ListItemText primary={question.title} />
+                            <Button onClick={()=>deleteQuestion(question.id)} color="primary">
+                            DELETE
+                            </Button>
                         </ListItem>
                         <NewAnswerForm id={question.id}/>
                         <AnswersList answers={question.answers}/>

@@ -12,4 +12,13 @@ class AnswersController < ApplicationController
             )
         end
     end
+
+    def destroy
+        answer=Answer.find params[:id]
+        if answer.destroy
+            head :ok
+        else
+            head :bad_request
+        end
+    end
 end

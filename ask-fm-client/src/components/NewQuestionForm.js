@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 export default function NewQuestionForm(){
     const classes = useStyles();
     const [errors, setErrors]=useState({});
+    
 
     const handleSubmit=event=>{
         const fd= new FormData(event.currentTarget);

@@ -16,6 +16,12 @@ export const Question = {
             },
             body: JSON.stringify(params)
           }).then(res => res.json())
+    },
+    destroy(id){
+        return fetch(`${BASE_URL}/questions/${id}`, {
+            method: 'DELETE',
+            credentials: 'include'
+        }).then(res=>res.json())
     }
 }
 
@@ -29,5 +35,11 @@ export const Answer={
               },
               body: JSON.stringify(params)
         }).then(res => res.json())
+    },
+    destroy(id){
+        return fetch(`${BASE_URL}/answers/${id}`, {
+            method: 'DELETE',
+            credentials: 'include'
+        }).then(res=>res.json())
     }
 }
