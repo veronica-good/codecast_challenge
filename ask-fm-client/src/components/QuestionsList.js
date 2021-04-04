@@ -7,6 +7,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import ContactSupportOutlinedIcon from '@material-ui/icons/ContactSupportOutlined';
 import AnswersList from './AnswersList'
+import NewAnswerForm from './NewAnswerForm';
+import {Divider} from '@material-ui/core'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -45,7 +47,9 @@ export default function QuestionsList(props) {
                             </ListItemIcon>
                             <ListItemText primary={question.title} />
                         </ListItem>
+                        <NewAnswerForm id={question.id}/>
                         <AnswersList answers={question.answers}/>
+                        <Divider/>
                     </>
                 )
             })}

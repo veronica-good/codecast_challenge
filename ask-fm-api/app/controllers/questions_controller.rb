@@ -16,6 +16,15 @@ class QuestionsController < ApplicationController
         end
     end
 
+    def destroy
+        question=Question.find params[:id]
+        if @question.destroy
+            head :ok
+        else
+            head :bad_request
+        end
+    end
+
     private
     def question_params
         params.require(:question).permit(:title)

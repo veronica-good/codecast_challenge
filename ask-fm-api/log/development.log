@@ -10045,3 +10045,1204 @@ Processing by QuestionsController#index as */*
 Completed 200 OK in 283ms (Views: 250.4ms | ActiveRecord: 31.5ms | Allocations: 88980)
 
 
+Started GET "/questions" for ::1 at 2021-04-04 10:49:45 -0700
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY "questions"."created_at" DESC[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 36]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 37]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 38]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 39]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 40]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 21]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 22]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 23]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 24]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 25]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 46]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 47]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 48]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 49]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (4.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 50]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 17]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 18]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 19]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 20]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 31]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 32]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 33]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 34]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 35]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 41]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 42]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 43]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 44]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (2.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 45]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 26]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 27]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (3.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 28]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 29]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 30]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (277.99ms)
+Completed 200 OK in 287ms (Views: 247.7ms | ActiveRecord: 35.6ms | Allocations: 91041)
+
+
+Started GET "/questions" for ::1 at 2021-04-04 11:06:28 -0700
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (1.0ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY "questions"."created_at" DESC[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.5ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 36]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 37]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 38]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 39]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 40]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 21]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 22]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 23]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 24]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 25]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 46]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 47]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 48]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 49]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 50]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 17]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 18]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 19]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 20]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 31]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 32]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 33]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 34]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 35]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 41]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 42]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 43]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 44]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 45]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 26]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 27]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 28]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 29]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 30]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (245.36ms)
+Completed 200 OK in 263ms (Views: 229.6ms | ActiveRecord: 27.1ms | Allocations: 91023)
+
+
+Started GET "/questions" for ::1 at 2021-04-04 11:06:47 -0700
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY "questions"."created_at" DESC[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (1.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (1.8ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (2.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (2.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 36]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 37]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 38]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (5.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 39]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 40]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 21]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (3.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 22]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 23]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 24]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (5.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 25]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (6.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (3.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 46]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 47]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 48]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 49]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 50]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (4.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 17]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 18]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 19]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 20]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (2.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 31]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 32]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 33]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 34]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 35]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 41]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 42]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 43]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 44]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 45]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 26]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 27]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 28]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 29]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 30]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (356.88ms)
+Completed 200 OK in 363ms (Views: 289.6ms | ActiveRecord: 72.6ms | Allocations: 88980)
+
+
+Started GET "/questions" for ::1 at 2021-04-04 11:08:32 -0700
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY "questions"."created_at" DESC[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (1.7ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (2.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.5ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (1.7ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.7ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.9ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (1.4ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.4ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.9ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.6ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (1.5ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.8ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (2.0ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (2.0ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 36]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 37]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 38]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 39]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 40]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 21]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 22]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 23]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 24]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 25]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (2.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 46]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 47]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 48]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 49]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 50]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 17]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 18]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 19]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 20]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 31]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 32]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 33]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 34]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 35]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 41]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 42]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 43]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 44]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 45]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 26]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 27]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 28]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 29]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 30]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (379.36ms)
+Completed 200 OK in 383ms (Views: 343.2ms | ActiveRecord: 39.2ms | Allocations: 88983)
+
+
+Started GET "/rails/info/routes" for ::1 at 2021-04-04 11:38:07 -0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/veronica/.rvm/gems/ruby-3.0.0/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 7.2ms | Allocations: 4277)
+  Rendered /home/veronica/.rvm/gems/ruby-3.0.0/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 2.5ms | Allocations: 1109)
+  Rendered /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 16.7ms | Allocations: 8677)
+  Rendered layout /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/layouts/application.html.erb (Duration: 17.9ms | Allocations: 8917)
+Completed 200 OK in 32ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 12743)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-04-04 11:38:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rails/info/routes" for ::1 at 2021-04-04 11:38:37 -0700
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/veronica/.rvm/gems/ruby-3.0.0/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 5.1ms | Allocations: 4133)
+  Rendered /home/veronica/.rvm/gems/ruby-3.0.0/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 1.4ms | Allocations: 687)
+  Rendered /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 9.4ms | Allocations: 7101)
+  Rendered layout /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/layouts/application.html.erb (Duration: 10.2ms | Allocations: 7324)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 8328)
+
+
+Started GET "/rails/info/routes" for ::1 at 2021-04-04 11:40:18 -0700
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/veronica/.rvm/gems/ruby-3.0.0/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 26.4ms | Allocations: 3900)
+  Rendered /home/veronica/.rvm/gems/ruby-3.0.0/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.5ms | Allocations: 89)
+  Rendered /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 36.1ms | Allocations: 5861)
+  Rendered layout /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/layouts/application.html.erb (Duration: 36.9ms | Allocations: 5935)
+Completed 200 OK in 40ms (Views: 38.4ms | ActiveRecord: 0.0ms | Allocations: 6281)
+
+
+Started GET "/rails/info/routes" for ::1 at 2021-04-04 11:40:22 -0700
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/veronica/.rvm/gems/ruby-3.0.0/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 20.2ms | Allocations: 3900)
+  Rendered /home/veronica/.rvm/gems/ruby-3.0.0/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.3ms | Allocations: 89)
+  Rendered /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 27.1ms | Allocations: 5862)
+  Rendered layout /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/layouts/application.html.erb (Duration: 27.6ms | Allocations: 5936)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 6281)
+
+
+Started GET "/rails/info/routes" for ::1 at 2021-04-04 11:40:30 -0700
+Processing by Rails::InfoController#routes as HTML
+  Rendering layout /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/layouts/application.html.erb
+  Rendering /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /home/veronica/.rvm/gems/ruby-3.0.0/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [27 times] (Duration: 7.2ms | Allocations: 3901)
+  Rendered /home/veronica/.rvm/gems/ruby-3.0.0/gems/actionpack-6.1.3.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/rails/info/routes.html.erb within layouts/application (Duration: 9.8ms | Allocations: 5862)
+  Rendered layout /home/veronica/.rvm/gems/ruby-3.0.0/gems/railties-6.1.3.1/lib/rails/templates/layouts/application.html.erb (Duration: 10.0ms | Allocations: 5935)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 6277)
+
+
+Started GET "/questions" for ::1 at 2021-04-04 12:20:45 -0700
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.7ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY "questions"."created_at" DESC[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.5ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (2.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.7ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (1.0ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.5ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.7ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.9ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 36]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 37]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 38]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 39]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 40]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 21]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 22]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 23]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 24]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 25]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 46]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (2.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 47]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 48]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 49]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 50]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 17]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 18]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 19]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 20]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 31]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 32]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 33]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 34]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 35]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 41]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 42]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 43]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 44]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 45]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 26]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 27]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 28]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 29]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 30]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (320.57ms)
+Completed 200 OK in 351ms (Views: 294.3ms | ActiveRecord: 48.3ms | Allocations: 107441)
+
+
+Started POST "/questions/16/answers" for ::1 at 2021-04-04 12:26:04 -0700
+Processing by AnswersController#create as */*
+  Parameters: {"title"=>"new answer", "question_id"=>"16", "answer"=>{"title"=>"new answer"}}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/answers_controller.rb:3:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/answers_controller.rb:6:in `create'
+  [1m[36mAnswer Create (0.8ms)[0m  [1m[32mINSERT INTO "answers" ("title", "question_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "new answer"], ["question_id", 16], ["created_at", "2021-04-04 19:26:04.828120"], ["updated_at", "2021-04-04 19:26:04.828120"]]
+  ↳ app/controllers/answers_controller.rb:6:in `create'
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/answers_controller.rb:6:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Answer (0.31ms)
+Completed 200 OK in 17ms (Views: 2.6ms | ActiveRecord: 5.2ms | Allocations: 3711)
+
+
+Started GET "/questions" for ::1 at 2021-04-04 12:26:05 -0700
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY "questions"."created_at" DESC[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.5ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.7ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.5ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.6ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (1.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (1.0ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.4ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 51]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 36]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 37]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 38]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 39]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 40]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 21]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 22]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 23]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 24]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 25]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (2.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 46]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 47]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 48]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 49]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 50]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 17]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 18]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 19]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 20]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 31]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 32]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 33]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 34]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 35]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 41]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 42]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 43]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 44]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 45]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 26]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 27]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 28]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 29]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 30]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (289.76ms)
+Completed 200 OK in 294ms (Views: 267.7ms | ActiveRecord: 25.4ms | Allocations: 89969)
+
+
+Started GET "/questions" for ::1 at 2021-04-04 12:27:05 -0700
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.6ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY "questions"."created_at" DESC[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.8ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.9ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.4ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.4ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 51]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 36]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 37]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 38]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 39]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 40]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 21]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 22]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 23]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 24]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 25]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 46]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 47]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 48]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 49]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 50]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 17]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 18]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 19]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 20]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 31]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 32]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 33]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 34]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 35]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 41]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 42]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 43]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 44]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 45]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 26]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 27]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 28]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 29]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 30]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (309.57ms)
+Completed 200 OK in 315ms (Views: 293.5ms | ActiveRecord: 20.3ms | Allocations: 89979)
+
+
+Started GET "/questions" for ::1 at 2021-04-04 12:27:12 -0700
+Processing by QuestionsController#index as */*
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions" ORDER BY "questions"."created_at" DESC[0m
+  ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.6ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.4ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.6ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.6ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mAnswer Load (0.3ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 51]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 36]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 37]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 38]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 39]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 40]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 21]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 22]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 23]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 24]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 25]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 1]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 2]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 3]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 4]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 5]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 6]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 7]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 8]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 9]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 10]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 46]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 47]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 48]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 49]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 50]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 16]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 17]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 18]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (1.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 19]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 20]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 31]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 32]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 33]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 34]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 35]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 11]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 12]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 13]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 14]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 15]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 41]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 42]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 43]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 44]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 45]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 26]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 27]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 28]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 29]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."answer_id" = $1[0m  [["answer_id", 30]]
+[active_model_serializers]   ↳ app/controllers/questions_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (302.44ms)
+Completed 200 OK in 305ms (Views: 280.8ms | ActiveRecord: 23.6ms | Allocations: 89979)
+
+
