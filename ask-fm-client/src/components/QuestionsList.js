@@ -27,6 +27,7 @@ export default function QuestionsList(props) {
     return (
         <List
         component="nav"
+        key="questions"
         aria-labelledby="nested-list-subheader"
         subheader={
             <ListSubheader component="div" id="nested-list-subheader">

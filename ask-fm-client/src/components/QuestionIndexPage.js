@@ -1,8 +1,9 @@
 import {Component} from 'react';
 import {Question} from '../requests';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import QuestionsList from './QuestionsList'
+import QuestionsList from './QuestionsList';
+import NewQuestionForm from './NewQuestionForm'
+
 
 export default class QuestionIndexPage extends Component {
     constructor(props){
@@ -28,14 +29,18 @@ export default class QuestionIndexPage extends Component {
     render(){
 
         return(
+            <>
+            
             <Grid
             container
             direction="column"
             justify="center"
             alignItems="center"
             >
+                <NewQuestionForm/>
                 <QuestionsList questions={this.state.questions}/>
             </Grid>
+            </>
         )
     }
 }
