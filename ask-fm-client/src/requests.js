@@ -43,3 +43,12 @@ export const Answer={
         }).then(res=>res.json())
     }
 }
+
+export const Comment={
+    destroy(id){
+        return fetch(`${BASE_URL}/comments/${id}`, {
+            method: 'DELETE',
+            credentials: 'include'
+        }).then(res=>res.json())
+    }
+}

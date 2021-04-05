@@ -51,7 +51,7 @@ export default function QuestionsList(props) {
                                 <ContactSupportOutlinedIcon />
                             </ListItemIcon>
                             <ListItemText primary={question.title} />
-                            <Button onClick={()=>deleteQuestion(question.id)} href="/" color="primary">
+                            <Button onClick={()=>deleteQuestion(question.id)} href="/" color="secondary">
                             DELETE
                             </Button>
                         </ListItem>
