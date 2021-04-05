@@ -29,7 +29,6 @@ export default function QuestionsList(props) {
 
     function deleteQuestion(id){
         Question.destroy(id)
-        
     }
 
     return (
@@ -52,7 +51,7 @@ export default function QuestionsList(props) {
                                 <ContactSupportOutlinedIcon />
                             </ListItemIcon>
                             <ListItemText primary={question.title} />
-                            <Button onClick={()=>deleteQuestion(question.id)} color="primary">
+                            <Button onClick={()=>deleteQuestion(question.id)} href="/" color="primary">
                             DELETE
                             </Button>
                         </ListItem>
