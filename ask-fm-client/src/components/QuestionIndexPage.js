@@ -30,7 +30,6 @@ export default class QuestionIndexPage extends Component {
 
         return(
             <>
-            
             <Grid
             container
             direction="column"

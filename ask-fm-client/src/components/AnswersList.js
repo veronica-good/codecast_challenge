@@ -21,9 +21,11 @@ export default function AnswersList({answers}){
     function deleteAnswer(id){
         Answer.destroy(id);
     }
+
     function deleteComment(id){
         Comment.destroy(id);
     }
+
     return(
         <List className={classes.nested} key="answers">
             {answers.map(answer=>{
@@ -39,6 +41,7 @@ export default function AnswersList({answers}){
                     </Button>
                 </ListItem>
                 <List className={classes.nested} key="comments">
+                {/* COMMENTS */}
                 {answer.comments.map(comment=>{
                     return(
                     <ListItem key={comment.id}>
@@ -51,6 +54,7 @@ export default function AnswersList({answers}){
                     </IconButton>
                     </ListItem>)
                 })}
+
                 </List>
                 </>
             )

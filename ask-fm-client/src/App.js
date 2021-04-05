@@ -6,7 +6,7 @@ import {
   Switch
 } from 'react-router-dom';
 import QuestionIndexPage from './components/QuestionIndexPage';
-// import Navbar from './components/Navbar';
+import Navbar from './components/Navbar';
 
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
   render(){
     return(
         <BrowserRouter>
-        {/* <Navbar/> */}
+        <Navbar/>
           <Switch>
             <Route exact path="/" component={QuestionIndexPage}/>
           </Switch>

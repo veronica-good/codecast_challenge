@@ -2,6 +2,7 @@ import {Answer} from '../requests';
 import {Typography, Button} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import {Container} from 'semantic-ui-react'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -33,11 +34,14 @@ export default function NewAnswerForm(props){
 
     return(
         <>
-        <Typography variant="subtitle2">New Answer</Typography>
-        <form onSubmit={event=>handleSubmit(event)} className={classes.root} noValidate autoComplete="off">
-                <TextField id="outlined-basic" label="Your answer" variant="outlined" name="title" id="title" size="small"/>
-                <Button variant="contained"type="submit">Submit</Button>
-        </form>
+        <Container textAlign="center">
+           <Typography variant="subtitle1">New Answer</Typography>
+            <form onSubmit={event=>handleSubmit(event)} className={classes.root} noValidate autoComplete="off">
+                    <TextField id="outlined-basic" label="Your answer" variant="outlined" name="title" id="title" size="small"/>
+                    <Button variant="contained"type="submit">Submit</Button>
+            </form> 
+        </Container>
+        
         </>
     )
 }
